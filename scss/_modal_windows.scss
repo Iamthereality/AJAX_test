@@ -1,0 +1,148 @@
+#feedback_modal_window, #success_modal_window{
+
+	.modal-content{
+		border-radius: 0px;
+
+		.success-header{
+			padding-bottom: 0px;
+		}
+
+		.modal-header{
+			border-bottom: none;
+
+			.close{
+				&:focus{
+					outline: none;
+				}
+			}
+		}
+
+		.modal-body{
+			padding-top: 0px;
+			padding-bottom: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+
+			.success-message{
+				text-align: center;
+				font-size: $btn_font_size;
+				font-weight: $btn_font_weight;
+				line-height: $btn_line_height;
+				color: $black_color;
+			}
+
+			.single-input-wrapper{
+				&:first-child{
+					margin-top: -20px;
+				}
+				&:nth-child(2){
+					margin-top: 40px;
+					margin-bottom: 50px;
+				}
+				&:last-child{
+					margin-bottom: 0px;
+				}
+				label{
+					font-size: 24px;
+				}				
+
+				input {
+					@include feedback_input_field($input_width, $input_height, $input_border_width, $input_border_style, $input_border_color, $input_text_offset);
+				}
+			}
+		}
+
+		.modal-footer{
+			border-top: none;
+
+			.feedback-window-controls, .success-window-controls{
+				margin-top: 40px;				
+				margin-bottom: 60px;
+				text-align: center;
+
+				#clear_button, #send_button, #close_window{					
+					display: inline-block;
+				}
+
+
+
+				#clear_button{
+					@include button($btn_width, $btn_height, $btn_transparent, $btn_font_size, $btn_font_weight, $black_color, $btn_line_height);
+					background:{
+						image: url(../img/ico/cancel_button.svg);
+						position: left 5% center;
+						repeat: no-repeat;
+					}
+					text-decoration: underline;
+				}
+
+				#send_button, #close_window{
+					@include button($btn_width, $btn_height, $btn_bg_color, $btn_font_size, $btn_font_weight, $btn_font_color, $btn_line_height);
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px){
+
+	#feedback_modal_window{
+
+		.modal-content{
+
+			.modal-footer{
+
+				.feedback-window-controls{
+					overflow: hidden;
+
+					#clear_button{
+						float: left;
+					}
+
+					#send_button{
+						float: right;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 991.98px){
+
+	#feedback_modal_window{
+
+		.modal-content{
+
+			.modal-footer{
+
+				.feedback-window-controls{
+					
+
+					#clear_button{
+						margin-bottom: 20px;
+					}
+
+					#send_button{
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 424.98px){
+
+	#feedback_modal_window{
+
+		.modal-content{
+
+			.modal-footer{
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+		}
+	}
+}

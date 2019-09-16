@@ -1,0 +1,28 @@
+.main-page-button-container{
+	height: 100%;
+	text-align: center;
+	margin-top: 45vh;
+	
+	
+	#feedback_button{
+		@include button(400px, $btn_height, $btn_bg_color, $btn_font_size, $btn_font_weight, $btn_font_color, $btn_line_height);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 424.98px){
+
+	.main-page-button-container{
+		height: 100%;
+		text-align: center;
+		margin-top: 50vh;
+		
+		
+		#feedback_button{
+			@include button(300px, $btn_height, $btn_bg_color, $btn_font_size, $btn_font_weight, $btn_font_color, $btn_line_height);
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}

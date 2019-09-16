@@ -1,0 +1,41 @@
+//color scheme
+$black_color: #000000;
+$white_color: #FFFFFF;
+
+
+//-----------button's properties-----------
+
+//sizes
+$btn_width: 260px;
+$btn_height: 76px;
+
+//colours
+$btn_bg_color: $black_color;
+$btn_font_color: $white_color;
+$btn_transparent: transparent;
+
+//fonts
+$btn_font_size: 48px;
+$btn_font_weight: bold;
+$btn_line_height: 68px;
+
+//-----------the end of the properties-----------
+
+
+
+//-----------feedback form input's properties-----------
+
+//sizes
+$input_width: 100%;
+$input_height: 82px;
+
+//border
+$input_border_width: 1px;
+$input_border_style: solid;
+$input_border_color: $black_color;
+
+//common properties
+$input_text_offset: 20px;
+
+//-----------the end of the properties-----------
+

@@ -1,0 +1,128 @@
+<?php
+	require 'php/feedback.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test_SPA</title>
+	<link rel="stylesheet" href="css/reset.min.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!--main page-->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col"> 
+					<div class="main-page-button-container">
+						<div id="feedback_button">обратная связь</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<!--the end of the main page-->
+
+	<!--feedback form modal window-->
+	<section>
+		<div class="modal fade" id="feedback_modal_window" tabindex="-1" role="dialog" aria-hidden="true">
+			 <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+			    <div class="modal-content">
+			        <div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			                <span aria-hidden="true">
+			                	<img src="img/ico/close_button.svg" alt="close_button">
+			                </span>
+			            </button>
+			        </div>
+			        <div class="modal-body">
+			        	<div class="container">
+			        		<div class="row no-gutters">
+			        			<div class="offset-xl-1 col-xl-10 offset-0 col-12">
+			        				<div class="single-input-wrapper">
+						           		<label for="name">Ваше имя*</label>
+										<input type="text" id="name">
+						           	</div>
+
+									<div class="single-input-wrapper">							
+										<label for="phone">Ваш номер телефона*</label>
+										<input type="tel" id="phone">
+									</div>
+
+									<div class="single-input-wrapper">
+										<label for="comment">Коментарий к заявке</label>
+										<input type="text" id="comment">
+									</div>
+			        			</div>
+			        		</div>
+			        	</div>
+			        </div>
+			         <div class="modal-footer">
+				        <div class="container">
+				        	<div class="row">
+				        		<div class="offset-xl-1 col-xl-10 offset-0 col-12">
+				        			<div class="feedback-window-controls">
+										<div id="clear_button">очистить</div>
+										<div id="send_button">отправить</div>	
+									</div>
+				        		</div>
+				        	</div>
+				        </div>	
+				      </div>
+			    </div>
+			</div>
+		</div>
+	</section>
+	<!--the end of the modal window-->
+
+	<!--success modal window-->
+	<section>
+		<div class="modal fade" id="success_modal_window" tabindex="-1" role="dialog" aria-hidden="true">
+			 <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			        <div class="modal-header success-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			                <span aria-hidden="true">
+			                	<img src="img/ico/close_button.svg" alt="close_button">
+			                </span>
+			            </button>
+			        </div>
+			        <div class="modal-body">
+			        	<div class="container">
+			        		<div class="row no-gutters">
+			        			<div class="col-12">
+			        				<div class="success-message">Данные успешно отправлены</div>
+			        			</div>
+			        		</div>
+			        	</div>
+			        </div>
+			         <div class="modal-footer">
+				        <div class="container">
+				        	<div class="row">
+				        		<div class="offset-xl-1 col-xl-10 offset-0 col-12">
+				        			<div class="success-window-controls">
+										<div id="close_window">закрыть</div>
+									</div>
+				        		</div>
+				        	</div>
+				        </div>	
+				      </div>
+			    </div>
+			</div>
+		</div>
+	</section>
+	<!--the end of the modal window-->
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/feedback_form_handler.js"></script>
+</body>
+</html>
+

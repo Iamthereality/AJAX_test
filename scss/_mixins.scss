@@ -1,0 +1,28 @@
+@mixin button($btn_width, $btn_height, $btn_bg_color, $btn_font_size, $btn_font_weight, $btn_font_color, $btn_line_height){
+	width: $btn_width;
+	height: $btn_height;
+	background-color: $btn_bg_color;
+	font:{
+		size: $btn_font_size;
+		weight: $btn_font_weight;
+	}
+	color: $btn_font_color;
+	line-height: $btn_line_height;
+	cursor: pointer;
+}
+
+@mixin feedback_input_field($input_width, $input_height, $input_border_width, $input_border_style, $input_border_color, $input_text_offset){
+	display: block;
+	width: $input_width;
+	height: $input_height;
+	border: {
+		width: $input_border_width;
+		style: $input_border_style;
+		color: $input_border_color;
+	}
+	padding-left: $input_text_offset;
+	font-size: 48px;
+	&:focus{
+		outline: none;
+	}
+}

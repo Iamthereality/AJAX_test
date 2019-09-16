@@ -1,0 +1,27 @@
+*{
+	font-family: 'Akrobat-Regular', 'Akrobat-Bold';
+}
+
+html, body {
+	margin: 0; 
+	height: 100%; 
+	overflow: hidden;
+}
+
+@font-face{
+	font-family: 'Akrobat-Regular';
+	src: url(../fonts/akrobat/Akrobat-Regular.otf);
+	font-weight: normal;
+  	font-style: normal;
+}
+@font-face{
+	font-family: 'Akrobat-Bold';
+	src: url(../fonts/akrobat/Akrobat-Bold.otf);
+	font-weight: bold;
+  	font-style: bold;
+}
+
+@import "mixins.scss";
+@import "variables.scss";
+@import "main_page.scss";
+@import "modal_windows.scss";
