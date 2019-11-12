@@ -1,1 +1,1 @@
-# Test_SPA
+# Test AJAX and MySQL
